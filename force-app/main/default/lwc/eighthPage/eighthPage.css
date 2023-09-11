@@ -1,0 +1,26 @@
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.opportunity{
+    display: flex;
+    margin-left: 10px;
+}
+.name{
+    margin-left: 5px;
+}
+.lineandcontent{
+    background-color:gainsboro;
+}
+.names{
+    margin-top: 5px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 238, 238);
+    padding: 4px;
+}

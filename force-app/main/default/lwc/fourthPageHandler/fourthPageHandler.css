@@ -1,0 +1,33 @@
+/* Styles for the lightning card in OptionsSelectorParent */
+.title{
+    font: 300;
+    color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+.slds-card {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.holdalloptions{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* margin-bottom: 85px; */
+    
+}
+.h1{
+   margin-left: 20px;
+   margin-top:10px;
+   color: black;
+   font: bold;
+}
+
+.button{
+    display: flex;
+   justify-content: right;
+  margin-right: 20px;
+}

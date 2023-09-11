@@ -1,0 +1,140 @@
+<template>
+    <lightning-card>
+        <div class="title">
+            <h1>Mark Lead as Intrested</h1>
+        </div>
+
+        <div class="maincontainer">
+
+            <h1>Buying Time Frame</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="device-selector-rg0rgx9p1" onchange={handleSelectChange}>
+                        <option value="Immediate">Immediate</option>
+                        <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                        <option value="iphone-11-pro">iPhone 11 Pro</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+
+            <h1>Budget</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="device-selector-rg0rgx9p2" onchange={handleSelectChange}>
+                        <option value="Below 15 Lacs">No device</option>
+                        <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <h1>Property Type</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="device-selector-rg0rgx9p3" onchange={handleSelectChange}>
+                        <option value="Recenditial">Recenditial</option>
+                        <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                        <option value="iphone-11-pro">iPhone 11 Pro</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+
+            <h1>Location</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="device-selector-rg0rgx9p4" onchange={handleSelectChange}>
+                        <option value="Noida">Noida</option>
+                        <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <h1>Call Action</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="device-selector-rg0rgx9p5" onchange={handleSelectChange}>
+                        <option value="--None--">--None--</option>
+                        <option value="Site Visit">Site Visit</option>
+                        <option value="Follow Up Task">Follow Up Task</option>
+                        <option value="Meeting">Meeting</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+
+
+            <template if:true={meetingvalue}>
+
+                <div class="allfourfields">
+                    <h1>Meeting Location</h1>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="device-selector-rg0rgx9p6" onchange={handleSelectChange}>
+                                <option value="no-device">No device</option>
+                                <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                                <option value="iphone-11-pro">iPhone 11 Pro</option>
+                                <option value="iphone-11">iPhone 11</option>
+                                <option value="iphone-xr">iPhone XR</option>
+                                <option value="iphone-x">iPhone X</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <h1>IC Office</h1>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="device-selector-rg0rgx9p7" onchange={handleSelectChange}>
+                                <option value="no-device">No device</option>
+                                <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                                <option value="iphone-11-pro">iPhone 11 Pro</option>
+                                <option value="iphone-11">iPhone 11</option>
+                                <option value="iphone-xr">iPhone XR</option>
+                                <option value="iphone-x">iPhone X</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+
+
+
+
+                    <div class="datepicker">
+                        <p>Start Date</p>
+                        <lightning-input type="date" value={formattedDate}
+                            onchange={handleDateChange}></lightning-input>
+
+                        <br>
+
+                        <p>End Date</p>
+                        <lightning-input type="date" value={formattedDate}
+                            onchange={handleDateChange}></lightning-input>
+                    </div>
+                </div>
+            </template>
+
+        </div>
+
+
+
+        <div class="buttons">
+            <lightning-button variant="base" label="Cancel" onclick={handleClick} required></lightning-button>
+
+            <lightning-button variant="brand" label="Move To Prospect" onclick={handleClick}
+                required></lightning-button>
+        </div>
+
+
+    </lightning-card>
+</template>

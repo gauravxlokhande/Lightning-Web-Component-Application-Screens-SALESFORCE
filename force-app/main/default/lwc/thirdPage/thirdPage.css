@@ -1,0 +1,24 @@
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.wholediv{
+    margin-bottom: 100px;
+}
+.searchdiv{
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.tabset{
+   margin-top: 10px;
+  margin-bottom: 125px;
+}
+.buttondiv{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 13px;
+    margin-left: 13px;
+}

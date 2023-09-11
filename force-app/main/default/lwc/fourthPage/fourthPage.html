@@ -1,0 +1,29 @@
+<template>
+
+
+
+    <div class="search-container">
+        <div class="selected-options">
+            <template for:each={selectedOptions} for:item="option">
+                <div key={option.id} class="selected-option">
+                    {option.label}
+                    <button class="remove-button" onclick={removeSelectedOption} data-option-id={option.id}>
+                        &#10005;
+                    </button>
+                </div>
+            </template>
+        </div>
+        <input type="text" class="search-input" placeholder="Search" oninput={handleSearch} />
+        <div class="options-container">
+            <template for:each={filteredOptions} for:item="option">
+                <div key={option.id} class="option">
+                    <label>
+                        <input type="checkbox" onchange={handleCheckboxChange} data-option-id={option.id} />
+                        {option.label}
+                    </label>
+                </div>
+            </template>
+        </div>
+
+    </div>
+</template>

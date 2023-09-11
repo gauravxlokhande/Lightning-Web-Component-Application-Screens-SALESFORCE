@@ -1,0 +1,53 @@
+<template>
+  <lightning-card>
+    <div class="showrecordform">
+      <template if:true={showrecords}>
+        <c-second-page></c-second-page>
+      </template>
+    </div>
+
+    <div class="createsuspect">
+      <h2><b>Create Suspect</b></h2>
+    </div>
+
+    <div class="title">
+      <h2>Basic Information:</h2>
+    </div>
+    <div class="slds-m-around_medium">
+      <lightning-input type="text" value={firstname} label="First Name" onchange={onfirstnamechange}></lightning-input>
+
+      <lightning-input type="text" label="Last Name" value={lastname} onchange={onlastnamechange}></lightning-input>
+
+      <lightning-input type="phone" label="Mobile" value={mobile} onchange={onmobilechange}></lightning-input>
+
+      <lightning-input type="email" label="Email" value={email} onchange={onemailchange}></lightning-input>
+
+      <lightning-input type="text" label="Department" value={department}
+        onchange={ondepartmentchange}></lightning-input>
+
+      <lightning-combobox name="Lead Source" label="Lead Source" value={leadsource} placeholder="Select Source"
+        options={Leadsourcesoptions} onchange={onleadsourcechange}></lightning-combobox>
+
+      <lightning-combobox name="Level" label="Level" value={level} placeholder="Select Level" options={leveloptions}
+        onchange={onlevelchange}></lightning-combobox>
+
+
+
+      <div class="slds-m-top_medium">
+
+        <lightning-button variant="neutral" label="Cancel" onclick={oncancel}></lightning-button>
+
+
+
+        <lightning-button variant="Brand" label="Create Suspect" onclick={oncreatebutton}></lightning-button>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </lightning-card>
+</template>

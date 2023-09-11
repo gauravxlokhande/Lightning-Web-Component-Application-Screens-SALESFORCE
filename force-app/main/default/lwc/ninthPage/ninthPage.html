@@ -1,0 +1,135 @@
+<template>
+    <lightning-card>
+        <div class="container">
+
+            <div class="icons">
+                <div class="fallback">
+                    <lightning-icon icon-name='action:fallback' alternative-text='fallback' size='small'
+                        title='fallback'></lightning-icon>
+                    <h1>border</h1>
+                </div>
+
+                <div class="post">
+                    <lightning-icon icon-name='action:share_post' alternative-text='share_post' size='small'
+                        title='share_post'></lightning-icon>
+                    <h1>Post</h1>
+                </div>
+
+                <div class="file">
+                    <lightning-icon icon-name='action:share_file' alternative-text='share_file' size='small'
+                        title='share_file'></lightning-icon>
+                    <h1>File</h1>
+                </div>
+
+                <div class="more">
+                    <lightning-icon icon-name='action:more' alternative-text='more' size='small'
+                        title='more'></lightning-icon>
+                    <h1>More</h1>
+                </div>
+            </div>
+
+
+            <div class="my-background-class">
+                <div class="car">
+                    <lightning-icon icon-name='custom:custom31' alternative-text='custom31' size='large'
+                        title='custom31'></lightning-icon>
+                </div>
+
+                <div class="information">
+                    <h6 style="font-size: large;">201901-01943</h6>
+                    <div class="info">
+                        <h1 style="color: rgb(40, 106, 192);">Mike West</h1>
+                        <h1> . Flash .2019</h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="iconname">
+                <div class="basket">
+                    <lightning-icon icon-name='custom:custom98' alternative-text='custom98' size='small'
+                        title='custom98'></lightning-icon>
+                </div>
+                <h6 style="font-size: large; margin-left:9px;"><b>Car Configurator</b></h6>
+            </div>
+
+            <div class="buttons">
+                <button class="hover-blue">Flint</button>
+                <button class="hover-blue">Flare</button>
+                <button class="hover-blue">Flash</button>
+
+            </div>
+
+
+
+
+            <img src={imageUrl} alt="Image" class="image" />
+
+
+            <div class="circle-button-container">
+                <button class="red-button" onclick={handleredcolor}></button>
+
+                <button class="blue-button" onclick={handlebluecolor}></button>
+
+                <button class="green-button " onclick={handlegreencolor}></button>
+
+                <button class="purple-button" onclick={handlepurplecolor}></button>
+
+                <button class="skyblue-button" onclick={handleskybluecolor}></button>
+
+                <button class="skin-button" onclick={handleskincolor}></button>
+            </div>
+
+            <div class="buttons2">
+                <button class="hover-blue">75 kWh</button>
+                <button class="hover-blue">100 kWh</button>
+                <button class="hover-blue">100P kWh</button>
+
+            </div>
+
+            <div class="carprice">
+                <h6 style="font-size: large;"><b>Price Quote</b></h6>
+                <h3><b>$45,000.00</b></h3>
+            </div>
+
+            <div class="icons" style="margin-top: 20px; baground-color:rgb(203, 189, 189);">
+
+                <div class="fallback">
+                    <lightning-icon icon-name='utility:home' alternative-text='home' size='small'
+                        title='home'></lightning-icon>
+                    <h1>Accounts</h1>
+                </div>
+
+                <div class="post">
+                    <lightning-icon icon-name='utility:favorite' alternative-text='favorite' size='small'
+                        title='favorite'></lightning-icon>
+                    <h1>Favourites</h1>
+                </div>
+
+                <div class="file">
+                    <lightning-icon icon-name='utility:search' alternative-text='search' size='small'
+                        title='search'></lightning-icon>
+                    <h1>Search</h1>
+                </div>
+
+                <div class="more">
+                    <lightning-icon icon-name='utility:notification' alternative-text='notification' size='small'
+                        title='notification'></lightning-icon>
+
+                    <h1>Notifications</h1>
+                </div>
+
+                <div class="more">
+                    <lightning-icon icon-name='utility:threedots' alternative-text='threedots' size='small'
+                        title='threedots'></lightning-icon>
+                    <h1>Menu</h1>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>

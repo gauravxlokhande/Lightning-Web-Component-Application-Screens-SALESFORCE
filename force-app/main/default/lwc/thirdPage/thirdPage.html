@@ -1,0 +1,107 @@
+<template>
+    <lightning-card>
+
+        <template if:true={clickonbtn}>
+            <c-fourth-page-handler></c-fourth-page-handler>
+        </template>
+
+        <div class="heading">
+            <h2><b>Suspects</b></h2>
+        </div>
+        <div class="wholediv">
+            <div class="searchdiv">
+
+                <lightning-input class="search-bar" type="search" name="search" placeholder="Search"></lightning-input>
+
+            </div>
+
+            <div class="tabset">
+                <lightning-tabset variant="vertical">
+                    <lightning-tab label="Project">
+                    </lightning-tab>
+
+                    <lightning-tab label="Campaign">
+                        <lightning-input type="checkbox" label="Ignored" name="input1"
+                            checked={input1}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Called Once" name="input2"
+                            checked={input2}></lightning-input>
+                        <lightning-input type="checkbox" label="Scheduled" name="input3"
+                            checked={input3}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Contactable" name="input4"
+                            checked={input4}></lightning-input>
+                        <lightning-input type="checkbox" label="Not having any events planned" name="input5"
+                            checked={input5}></lightning-input>
+                    </lightning-tab>
+
+                    <lightning-tab label="Location">
+                        <lightning-input type="checkbox" label="Ignored" name="input1"
+                            checked={input1}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Called Once" name="input2"
+                            checked={input2}></lightning-input>
+                        <lightning-input type="checkbox" label="Scheduled" name="input3"
+                            checked={input3}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Contactable" name="input4"
+                            checked={input4}></lightning-input>
+                        <lightning-input type="checkbox" label="Not having any events planned" name="input5"
+                            checked={input5}></lightning-input>
+                    </lightning-tab>
+
+                    <lightning-tab label="Lead Type" onclick={onclickleadtype}>
+                        <lightning-input type="checkbox" label="Ignored" name="input1"
+                            checked={input1}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Called Once" name="input2"
+                            checked={input2}></lightning-input>
+                        <lightning-input type="checkbox" label="Scheduled" name="input3"
+                            checked={input3}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Contactable" name="input4"
+                            checked={input4}></lightning-input>
+                        <lightning-input type="checkbox" label="Not having any events planned" name="input5"
+                            checked={input5}></lightning-input>
+                    </lightning-tab>
+
+                    <lightning-tab label="Source">
+                        <lightning-input type="checkbox" label="Ignored" name="input1"
+                            checked={input1}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Called Once" name="input2"
+                            checked={input2}></lightning-input>
+                        <lightning-input type="checkbox" label="Scheduled" name="input3"
+                            checked={input3}></lightning-input>
+                        <lightning-input type="checkbox" label="Not Contactable" name="input4"
+                            checked={input4}></lightning-input>
+                        <lightning-input type="checkbox" label="Not having any events planned" name="input5"
+                            checked={input5}></lightning-input>
+                    </lightning-tab>
+
+                    <div class="salesassociatediv">
+                        <lightning-tab label="Sales Associate">
+                            <lightning-input type="checkbox" label="Ignored" name="input1"
+                                checked={input1}></lightning-input>
+                            <lightning-input type="checkbox" label="Not Called Once" name="input2"
+                                checked={input2}></lightning-input>
+                            <lightning-input type="checkbox" label="Scheduled" name="input3"
+                                checked={input3}></lightning-input>
+                            <lightning-input type="checkbox" label="Not Contactable" name="input4"
+                                checked={input4}></lightning-input>
+                            <lightning-input type="checkbox" label="Not having any events planned" name="input5"
+                                checked={input5}></lightning-input>
+                        </lightning-tab>
+
+                    </div>
+
+                </lightning-tabset>
+            </div>
+        </div>
+
+        <div class="buttondiv">
+            <div class="resetbutton">
+                <lightning-button variant="base" label="Reset" onclick={onreset}></lightning-button>
+            </div>
+            <div class="filterbutton">
+                <lightning-button variant="brand" label="Filter" onclick={onFilter}></lightning-button>
+            </div>
+
+        </div>
+
+
+    </lightning-card>
+</template>

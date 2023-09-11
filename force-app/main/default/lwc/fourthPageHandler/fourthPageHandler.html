@@ -1,0 +1,38 @@
+<template>
+
+
+    <template if:true={navigateto5thpage}>
+        <c-fifth-Page></c-fifth-Page>
+    </template>
+
+    <lightning-card>
+        <div class="title">
+            <h2>Create Lead</h2>
+        </div>
+        <div class="holdalloptions">
+
+
+            <h2 class="h1">Developer</h2>
+            <c-fourth-page options={options}></c-fourth-page>
+
+            <!-- Second set of options -->
+            <h2 class="h1">Project</h2>
+            <c-fourth-page options={options2}></c-fourth-page>
+
+            <h2 class="h1">State</h2>
+            <c-fourth-page options={options3}></c-fourth-page>
+
+            <h2 class="h1">City</h2>
+            <c-fourth-page options={options4}></c-fourth-page>
+
+            <h2 class="h1">Location</h2>
+            <c-fourth-page options={options5}></c-fourth-page>
+        </div>
+        <!-- First set of options -->
+
+        <div class="button">
+            <lightning-button variant="brand" label="Navigation" onclick={handleClick}></lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

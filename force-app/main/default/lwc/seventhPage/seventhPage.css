@@ -1,0 +1,44 @@
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bagroundimages {
+    position: relative;
+}
+.container1{
+    margin-top: 10px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slds-avatar{
+    height: 20%;
+    width: 20%;
+}
+.profile{
+    position: absolute;
+    top: 100px;
+}
+.activity{
+    margin-top: 20%;
+}
+.line1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 238, 238);
+    padding: 4px;
+}
+.customerprofile{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 10px;
+}
+.allprogressring{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+

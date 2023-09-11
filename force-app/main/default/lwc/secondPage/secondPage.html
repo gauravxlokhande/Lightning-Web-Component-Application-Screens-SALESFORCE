@@ -1,0 +1,94 @@
+<template>
+  <lightning-card title="">
+    <div class="redirectfunction">
+      <template if:true={showsuspectform}>
+        <c-first-page></c-first-page>
+      </template>
+    </div>
+
+    <div class="redirecttofilterpage">
+      <template if:true={filtrtemplate}>
+        <c-third-page></c-third-page>
+      </template>
+    </div>
+
+
+    <h2 style="text-align: center;"> <b>Suspects</b> </h2>
+
+
+
+
+
+    <div class="search-container">
+
+      <lightning-input class="search-bar" type="search" name="search" placeholder="Search"></lightning-input>
+
+      <lightning-icon class="filter-icon" icon-name="utility:filter" onclick={onfiltericonclick} size="medium">
+      </lightning-icon>
+
+    </div>
+
+    <div class="Select-transfer-btn">
+      <lightning-button variant="base" label="Select All" onclick={onselectall} class="slds-m-left_x-small">
+      </lightning-button>
+
+      <lightning-button variant="Neutral" label="New Suspect" title="Non-primary action" onclick={onnewsuspect}
+        class="slds-m-left_x-small">
+      </lightning-button>
+
+    </div>
+
+
+    <!-- <template if:true={contacts}> -->
+    <div class="container">
+
+
+      <ul class="slds-list_ordered">
+
+        <template for:each={contacts.data} for:item="contact">
+
+          <li key={contact.Id}>
+
+            <div class="recordcontainer">
+
+              <div class="checkbox">
+                <lightning-input onchange={ontrue} type="checkbox"></lightning-input>
+              </div>
+
+              <div class="recordinfo">
+                <p><b>RecordId:</b> {contact.Id}</p>
+                <p><b>Name:</b> {contact.Name}</p>
+                <p><b>Email:</b> {contact.Email__c}</p>
+                <p><b>Lead Source:</b> {contact.Lead_source__c}</p>
+                <div class="followuptie">
+                  <p><b>Follow up tomorrow at 10.00pm</b></p>
+                </div>
+
+              </div>
+
+              <div class="iconcontainer">
+                <div class="fire-icon">
+                  <span class="icon">🔥</span>
+                </div>
+
+                <div class="smsicon">
+                  <span class="icon">
+                    <h1 style="background-color: yellow;">SMS</h1>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+        </template>
+
+      </ul>
+
+    </div>
+    <!-- </template> -->
+
+
+  </lightning-card>
+</template>

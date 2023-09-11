@@ -1,0 +1,26 @@
+.createsuspect{
+display: flex;
+justify-content: center;
+}
+
+.slds-m-around_medium {
+    margin: 20px;
+}
+
+.slds-m-top_medium {
+    margin-top: 20px;
+}
+
+.slds-m-top_medium {
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color: skyblue;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.slds-form-element__label {
+    font-weight: 500;
+}
+

@@ -1,0 +1,92 @@
+<template>
+    <lightning-card>
+        <div class="icons">
+            <lightning-icon icon-name='action:share_post' alternative-text='share_post' size='small'
+                title='share_post'></lightning-icon>
+
+
+            <lightning-icon icon-name='action:call' alternative-text='call' size='small' title='call'></lightning-icon>
+
+
+            <lightning-icon icon-name='action:email' alternative-text='email' size='small'
+                title='email'></lightning-icon>
+
+
+            <lightning-icon icon-name='action:more' alternative-text='more' size='small' title='more'></lightning-icon>
+        </div>
+
+
+        <div class="container1">
+            <div class="bagroundimages">
+                <div class="coverpic">
+                    <img src={coverpic} alt="cover">
+                </div>
+
+                <!-- <div class="grayimage">
+                <img src={grayimg} alt="covr2">
+            </div> -->
+            </div>
+
+
+            <div class="profile">
+                <span class="slds-avatar slds-avatar_circle slds-avatar_large">
+                    <img alt="Person name" src={profile} />
+                </span>
+
+                <h6 style="size: 20px;"><b>Gaurav Lokhande</b></h6>
+
+                <h2>Gold Rewards Member</h2>
+            </div>
+
+        </div>
+
+        <div class="activity">
+            <hr style="border-top: 2px solid hsl(0, 0%, 80%); margin-top: 10px;margin-bottom:2px">
+            <div class="line1">
+
+                <h3 style="margin-left: 10px;"><b>Activity</b></h3>
+
+                <h2 style="margin-right: 10px;"><b>></b></h2>
+            </div>
+
+            <hr style="border-top: 2px solid hsl(0, 0%, 80%); margin-top: 5px;margin-bottom:2px">
+            <div class="line1">
+
+                <h3 style="margin-left: 10px;"><b>Predictions</b></h3>
+
+                <h2 style="margin-right: 10px;"><b>></b></h2>
+            </div>
+            <hr style="border-top: 2px solid hsl(0, 0%, 80%); margin-top: 5px;margin-bottom:2px">
+        </div>
+
+        <div class="customerprofile">
+            <lightning-icon icon-name='custom:custom103' alternative-text='custom103' size='small'
+                title='custom103'></lightning-icon>
+
+            <h5 style="margin-left: 10px;"><b> Customer Profile</b></h5>
+        </div>
+
+        <div class="allprogressring">
+
+            <div class="combine">
+                <lightning-progress-ring value="70" size="large"> </lightning-progress-ring>
+                <h1><b>Eco-travel</b></h1>
+            </div>
+
+
+            <div class="combine">
+                <lightning-progress-ring value="45" size="large"> </lightning-progress-ring>
+                <h1><b>Business</b></h1>
+            </div>
+
+            <div class="combine">
+                <lightning-progress-ring value="30" size="large"> </lightning-progress-ring>
+                <h1><b>Leisure</b></h1>
+            </div>
+
+        </div>
+
+
+    </lightning-card>
+
+</template>
