@@ -1,0 +1,19 @@
+.bacnot{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(67, 136, 205);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
+.dashboard{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(41, 41, 46, 0.977);
+}
+.dyamicicons{
+    text-align: center;
+    margin-top: 10px;
+}
