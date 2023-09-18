@@ -1,18 +1,5 @@
-# Salesforce DX Project: Next Steps
-
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
-
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+ it Contain LWC Application Screens with Screen Image:
+ [Suspect-final-pdf 9 21.pdf](https://github.com/gaurravlokhande/Lightning-Web-Component-Application-Screens-SALESFORCE/files/12647807/Suspect-final-pdf.9.21.pdf)
+![image-99](https://github.com/gaurravlokhande/Lightning-Web-Component-Application-Screens-SALESFORCE/assets/119065314/2a7ffed1-da0d-40db-b9e0-557583ab79bf)
+![record_home](https://github.com/gaurravlokhande/Lightning-Web-Component-Application-Screens-SALESFORCE/assets/119065314/d850b2c6-7180-408d-b2f0-9df46d6c5a63)
+![Screenshot (28)](https://github.com/gaurravlokhande/Lightning-Web-Component-Application-Screens-SALESFORCE/assets/119065314/a8642fd5-c0f9-4866-9b3f-8cee0b809b97)
